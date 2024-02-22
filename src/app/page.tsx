@@ -1,10 +1,5 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Layout } from "@/components/core/layout";
 
 export default function Home() {
-	return (
-		<div>
-			<Link href="/projects">Projects</Link>
-		</div>
-	);
+	return <Layout.Header title="Home" />;
 }
