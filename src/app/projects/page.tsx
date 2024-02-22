@@ -8,13 +8,13 @@ async function fetchProjectLists() {
 }
 
 export default async function ProjectPage() {
+	const projects = await fetchProjectLists();
+
 	return (
 		<>
 			<Layout.Header title="Projects" />
 			<Layout.Content>
-				<Suspense fallback={<span>loading...</span>}>
-					<ProjectTable />
-				</Suspense>
+				<ProjectTable projects={projects} />
 			</Layout.Content>
 		</>
 	);
