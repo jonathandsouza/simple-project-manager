@@ -1,4 +1,4 @@
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import { TableIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -21,7 +21,7 @@ export function Menu() {
 			<ul className="flex flex-col space-y-2 flex-grow">
 				<MenuItem
 					href="/projects"
-					icon={<SunIcon />}
+					icon={<TableIcon />}
 					toolTipText="Projects"
 					key="projects"
 				/>
