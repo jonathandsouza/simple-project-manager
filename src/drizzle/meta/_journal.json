@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1708790363023,
+      "tag": "0000_clean_taskmaster",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1708790952084,
+      "tag": "0001_rainy_black_tom",
+      "breakpoints": true
+    }
+  ]
+}

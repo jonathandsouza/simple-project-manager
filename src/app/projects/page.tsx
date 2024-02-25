@@ -1,10 +1,11 @@
 import { Layout } from "@/components/core/layout";
 import ProjectTable from "@/components/projects/project-table/project-table";
-import { prisma } from "@/lib/client";
+import { db } from "@/drizzle/db";
+import { projects } from "@/drizzle/schema";
 import { Suspense } from "react";
 
 async function fetchProjectLists() {
-	return prisma.projects.findMany();
+	return db.select().from(projects);
 }
 
 export default async function ProjectPage() {
