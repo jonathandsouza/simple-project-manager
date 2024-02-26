@@ -14,7 +14,9 @@ export default async function ProjectPage() {
 		<>
 			<Layout.Header title="Projects" />
 			<Layout.Content>
-				<ProjectTable projects={projects} />
+				<Suspense fallback="loading...">
+					<ProjectTable projects={projects} />
+				</Suspense>
 			</Layout.Content>
 		</>
 	);
